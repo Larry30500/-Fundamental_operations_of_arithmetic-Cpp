@@ -67,7 +67,7 @@ double factor()
   return 0;
 }
 
-//當下一個為 *xX^/ 字元時
+// 當下一個字元為【*】、【x】、【X】、【^】、【/】字元時，則處理【*】、【x】、【X】、【^】、【/】後面的運算元。
 double term()
 {
   double result = factor();
@@ -168,7 +168,7 @@ int main()
     // 判別：如果輸入皆為允許字元，則輸出運算結果。
     else
     {
-      # 去除輸入字串中的空格，並計算空格的數量。。
+      # 去除輸入字串中的空格，並計算空格的數量。
       int i, j;
       int counter = 0;
 
@@ -203,7 +203,7 @@ int main()
 
 &nbsp;
 
-### 讀取並顯示其輸出結果檔 (output_result.txt) 的內容
+### 讀取並顯示其輸出結果檔 (output_result.txt) 的內容。
 ```cpp
 cout << "\n" << "以下將讀取其輸出結果檔，並顯示其內容：" << "\n\n";
 
@@ -211,7 +211,7 @@ ifstream my_read_file("output_result.txt");
 
 ⋮
 
-cout << "\n" << 輸出結果檔的內容，已經被讀取完畢。 << "\n\n";
+cout << "\n" << "輸出結果檔的內容，已經被讀取完畢。" << "\n\n";
 
 my_read_file.close();
 return 0;
