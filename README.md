@@ -177,8 +177,7 @@ int main()
         if (input[i] == ' ') counter++;
         else
         {
-          input[j] = input[i];
-          j++;
+          ⋮
         }
       }
 
