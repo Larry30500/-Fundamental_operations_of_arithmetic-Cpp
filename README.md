@@ -90,7 +90,7 @@ double term()
   return result;
 }
 
-# 當下一個字元為【+】、【-】字元時，則處理【+】、【-】後面的運算元。
+// 當下一個字元為【+】、【-】字元時，則處理【+】、【-】後面的運算元。
 double expression()
 {
   double result = term();
